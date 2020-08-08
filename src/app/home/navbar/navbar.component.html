@@ -1,0 +1,34 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">COVID-19 TRACKER</a>
+    </div>
+    <ul class="nav navbar-nav" >
+      <li class="dropdown" id="state">
+        <mat-form-field appearance="fill">
+          <mat-label>States</mat-label>
+          <mat-select [value]="s_selected.value"  (selectionChange)="statechange($event)" >
+            <mat-option *ngFor="let state of statelist" [value]="state.value">
+              {{state.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </li>
+      <li class="dropdown" id="time"> 
+        <mat-form-field appearance="fill">
+          <mat-label>Time</mat-label>
+          <mat-select [value]="t_selected.value"  (selectionChange)="timechange($event)" >
+            <mat-option *ngFor="let time of timelist" [value]="time.value">
+              {{time.key}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </li>
+      <li id="logout" >
+        <a href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

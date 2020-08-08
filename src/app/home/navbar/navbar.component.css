@@ -1,0 +1,36 @@
+a.navbar-brand
+{
+    font-size: xx-large;
+}
+a.dropdown-toggle{
+
+    font-size: x-large;
+
+}
+.navbar.navbar-inverse{
+
+    height: 100px;
+}
+.container-fluid{
+    margin-top: 20px;
+}
+#state{
+
+    position: relative;
+
+    left: 150px;
+
+}
+#time{
+
+    position: relative;
+
+    left: 300px;
+}
+#logout{
+    position: relative;
+
+    left: 500px;
+
+
+}

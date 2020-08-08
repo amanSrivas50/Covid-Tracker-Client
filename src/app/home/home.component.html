@@ -1,0 +1,17 @@
+<app-navbar (state)="getstate($event)" (time)="gettime($event)"  ></app-navbar>
+
+<br>
+
+<ngx-charts-bar-vertical 
+    [view]="[1400,500]"
+    [results]="covid"
+    [xAxisLabel]="'Days'"
+    [legendTitle]="'Daily Positive Cases'"
+    [yAxisLabel]="'No. Positive Cases Detetcted'"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxis]="true"
+    [yAxis]="true"
+    [gradient]="true">
+</ngx-charts-bar-vertical>
